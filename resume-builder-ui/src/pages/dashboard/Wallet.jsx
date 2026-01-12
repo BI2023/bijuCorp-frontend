@@ -172,11 +172,11 @@ const Wallet = () => {
                   key={preset}
                   onClick={() => setAmount(preset.toString())}
                   className={`p-3 border-2 rounded-lg font-semibold transition-all ${amount === preset.toString()
-                      ? "border-primary bg-primary/5 text-primary"
-                      : "border-border hover:border-primary/50"
+                    ? "border-primary bg-primary/5 text-primary"
+                    : "border-border hover:border-primary/50"
                     }`}
                 >
-                  ${preset}
+                  ₹{preset}
                 </button>
               ))}
             </div>
