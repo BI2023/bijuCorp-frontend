@@ -1,7 +1,15 @@
 import axios from "axios"
 
 const getBaseUrl = () => {
-  let url = import.meta.env.VITE_API_BASE_URL || "http://localhost:8000/api"
+  let url = import.meta.env.VITE_API_BASE_URL
+
+  if (import.meta.env.PROD && !url) {
+    throw new Error("VITE_API_BASE_URL is hidden or missing! Please set this environment variable in your deployment settings (e.g., Vercel/Render).")
+  }
+
+  // Fallback to localhost ONLY in Development (because Production would have thrown an error above)
+  url = url || "http://localhost:8000/api"
+
   if (!url.endsWith("/api") && !url.endsWith("/api/")) {
     url = `${url}/api`
   }
