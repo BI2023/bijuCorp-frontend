@@ -134,7 +134,7 @@ export default function Register() {
                   value={formData.firstName}
                   onChange={handleChange}
                   error={errors.firstName}
-                  placeholder="John"
+                  placeholder="Bhupendra"
                   autoComplete="given-name"
                   disabled={loading}
                 />
@@ -147,7 +147,7 @@ export default function Register() {
                   value={formData.lastName}
                   onChange={handleChange}
                   error={errors.lastName}
-                  placeholder="Doe"
+                  placeholder="Singh"
                   autoComplete="family-name"
                   disabled={loading}
                 />
@@ -162,7 +162,7 @@ export default function Register() {
                 value={formData.username}
                 onChange={handleChange}
                 error={errors.username}
-                placeholder="johndoe"
+                placeholder="singsbhu"
                 autoComplete="username"
                 disabled={loading}
               />
@@ -176,7 +176,7 @@ export default function Register() {
                 value={formData.email}
                 onChange={handleChange}
                 error={errors.email}
-                placeholder="john@example.com"
+                placeholder="singh.bk@gmail.com"
                 autoComplete="email"
                 disabled={loading}
               />
