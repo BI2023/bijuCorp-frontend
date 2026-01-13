@@ -176,7 +176,7 @@ export default function Register() {
                 value={formData.email}
                 onChange={handleChange}
                 error={errors.email}
-                placeholder="singh.bk@gmail.com"
+                placeholder="singh.bk@bijucorp.in"
                 autoComplete="email"
                 disabled={loading}
               />
