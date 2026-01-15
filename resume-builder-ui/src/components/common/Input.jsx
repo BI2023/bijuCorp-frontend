@@ -27,9 +27,8 @@ const Input = ({
         placeholder={placeholder}
         disabled={disabled}
         required={required}
-        className={`w-full px-4 py-2 border border-border rounded-lg bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent disabled:opacity-50 disabled:cursor-not-allowed ${
-          error ? "border-destructive focus:ring-destructive" : ""
-        } ${className}`}
+        className={`w-full px-4 py-2 border border-border rounded-lg bg-background text-foreground placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent disabled:opacity-50 disabled:cursor-not-allowed ${error ? "border-destructive focus:ring-destructive" : ""
+          } ${className}`}
         {...props}
       />
       {error && <p className="mt-1.5 text-sm text-destructive">{error}</p>}
