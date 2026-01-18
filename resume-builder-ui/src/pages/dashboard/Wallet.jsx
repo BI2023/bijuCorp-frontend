@@ -16,12 +16,12 @@ const Wallet = () => {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState("")
 
-  const presetAmounts = [10, 25, 50, 100]
+  const presetAmounts = [150, 200, 500, 1000]
 
   const handleAddMoney = async () => {
     const amountNum = Number.parseFloat(amount)
-    if (!amountNum || amountNum <= 0) {
-      setError("Please enter a valid amount")
+    if (!amountNum || amountNum < 150) {
+      setError("Minimum amount to add is ₹150")
       return
     }
 
@@ -223,7 +223,7 @@ const Wallet = () => {
               className="flex-1"
               onClick={handleAddMoney}
               loading={loading}
-              disabled={!amount || Number.parseFloat(amount) <= 0}
+              disabled={!amount || Number.parseFloat(amount) < 150}
             >
               Add {formatCurrency(Number.parseFloat(amount) || 0)}
             </Button>
