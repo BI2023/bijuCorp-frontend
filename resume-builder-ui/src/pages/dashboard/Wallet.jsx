@@ -8,6 +8,7 @@ import Button from "../../components/common/Button"
 import Input from "../../components/common/Input"
 import Modal from "../../components/common/Modal"
 import { formatCurrency } from "../../utils/helpers"
+import { PDF_GENERATION_COST } from "../../utils/constants"
 
 const Wallet = () => {
   const { balance, createPaymentOrder, verifyPaymentSignature } = useWallet()
@@ -134,7 +135,7 @@ const Wallet = () => {
                     <p className="text-sm text-muted-foreground">Per resume</p>
                   </div>
                 </div>
-                <p className="text-2xl font-bold text-foreground">{formatCurrency(5)}</p>
+                <p className="text-2xl font-bold text-foreground">{formatCurrency(PDF_GENERATION_COST)}</p>
               </div>
 
               <div className="bg-card border border-border rounded-xl p-6">
@@ -154,7 +155,7 @@ const Wallet = () => {
                     <p className="text-sm text-muted-foreground">With current balance</p>
                   </div>
                 </div>
-                <p className="text-2xl font-bold text-foreground">{Math.floor(balance / 5)}</p>
+                <p className="text-2xl font-bold text-foreground">{Math.floor(balance / PDF_GENERATION_COST)}</p>
               </div>
             </div>
           </div>

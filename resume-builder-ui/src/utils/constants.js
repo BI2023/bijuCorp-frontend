@@ -23,7 +23,7 @@ export const RESUME_TEMPLATES = {
   PROFESSIONAL: "professional",
 }
 
-export const PDF_GENERATION_COST = 5 // Cost in credits
+export const PDF_GENERATION_COST = 10 // Cost in credits
 
 export const ROUTES = {
   HOME: "/",
