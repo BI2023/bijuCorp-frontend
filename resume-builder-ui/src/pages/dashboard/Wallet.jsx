@@ -65,7 +65,8 @@ const Wallet = () => {
           setShowAddMoneyModal(false)
           setAmount("")
           // Optional: Show success toast
-          alert(`Success! New Balance: ${formatCurrency(verificationResult.data.new_balance)}`)
+          // alert(`Success! New Balance: ${formatCurrency(verificationResult.data.new_balance)}`)
+
         } else {
           setError(verificationResult.error)
         }
