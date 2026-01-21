@@ -34,4 +34,5 @@ export const ROUTES = {
   MY_RESUMES: "/dashboard/my-resumes",
   WALLET: "/dashboard/wallet",
   TRANSACTIONS: "/dashboard/transactions",
+  STUDY_DOCS: "/study-docs",
 }

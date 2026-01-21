@@ -61,9 +61,12 @@ export default function Home() {
             </h1>
           </div>
           <nav className="flex items-center gap-6">
-            <a href="/docs" className="text-gray-700 hover:text-teal-600 font-medium transition-colors hidden sm:block">
-              Study Docs
-            </a>
+            <button
+              onClick={() => navigate(ROUTES.STUDY_DOCS)}
+              className="text-gray-700 hover:text-teal-600 font-medium transition-colors hidden sm:block"
+            >
+              BijuCorp Learning Hub
+            </button>
             {isAuthenticated ? (
               <button
                 onClick={() => navigate(ROUTES.DASHBOARD)}
@@ -110,12 +113,12 @@ export default function Home() {
           >
             Create Resume
           </button>
-          <a
-            href="/docs"
+          <button
+            onClick={() => navigate(ROUTES.STUDY_DOCS)}
             className="px-8 py-4 bg-white border-2 border-gray-200 text-gray-700 rounded-xl hover:shadow-xl hover:border-teal-300 transition-all font-semibold text-lg"
           >
-            Browse Study Docs
-          </a>
+            BijuCorp Learning Hub
+          </button>
         </div>
       </section>
 
@@ -205,9 +208,9 @@ export default function Home() {
               <h4 className="font-bold text-gray-900 mb-3">Resources</h4>
               <ul className="space-y-2 text-gray-600">
                 <li>
-                  <a href="/docs" className="hover:text-teal-600 transition-colors">
-                    Study Docs
-                  </a>
+                  <button onClick={() => navigate(ROUTES.STUDY_DOCS)} className="hover:text-teal-600 transition-colors">
+                    BijuCorp Learning Hub
+                  </button>
                 </li>
                 <li>
                   <a href="/templates" className="hover:text-teal-600 transition-colors">
