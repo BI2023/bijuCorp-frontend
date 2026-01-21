@@ -167,21 +167,21 @@ export default function Home() {
               1
             </div>
             <h4 className="text-2xl font-bold mb-3 text-gray-900">Choose Template</h4>
-            <p className="text-gray-600 leading-relaxed text-lg">Select from our professional template collection</p>
+            <p className="text-gray-600 leading-relaxed text-lg">Sign up and select from our wide range of professional templates</p>
           </div>
           <div className="text-center p-6">
             <div className="w-20 h-20 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-2xl mx-auto mb-6 flex items-center justify-center text-white text-3xl font-bold shadow-lg">
               2
             </div>
-            <h4 className="text-2xl font-bold mb-3 text-gray-900">Fill Details</h4>
-            <p className="text-gray-600 leading-relaxed text-lg">Add your information with our easy-to-use editor</p>
+            <h4 className="text-2xl font-bold mb-3 text-gray-900">Build Your Resume</h4>
+            <p className="text-gray-600 leading-relaxed text-lg">Enter your details and customize your resume using our intuitive builder</p>
           </div>
           <div className="text-center p-6">
             <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl mx-auto mb-6 flex items-center justify-center text-white text-3xl font-bold shadow-lg">
               3
             </div>
-            <h4 className="text-2xl font-bold mb-3 text-gray-900">Download PDF</h4>
-            <p className="text-gray-600 leading-relaxed text-lg">Get your professional resume instantly</p>
+            <h4 className="text-2xl font-bold mb-3 text-gray-900">Top-up & Download</h4>
+            <p className="text-gray-600 leading-relaxed text-lg">Add money to your wallet (Min ₹150) and download for just ₹10</p>
           </div>
         </div>
       </section>
