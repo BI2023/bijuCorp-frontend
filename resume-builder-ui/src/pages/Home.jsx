@@ -117,7 +117,7 @@ export default function Home() {
             onClick={() => navigate(ROUTES.STUDY_DOCS)}
             className="px-8 py-4 bg-white border-2 border-gray-200 text-gray-700 rounded-xl hover:shadow-xl hover:border-teal-300 transition-all font-semibold text-lg"
           >
-            BijuCorp Learning Hub
+            bijuCorp Learning Hub
           </button>
         </div>
       </section>
@@ -209,7 +209,7 @@ export default function Home() {
               <ul className="space-y-2 text-gray-600">
                 <li>
                   <button onClick={() => navigate(ROUTES.STUDY_DOCS)} className="hover:text-teal-600 transition-colors">
-                    BijuCorp Learning Hub
+                    bijuCorp Learning Hub
                   </button>
                 </li>
                 <li>
