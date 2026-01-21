@@ -65,7 +65,7 @@ export default function Home() {
               onClick={() => navigate(ROUTES.STUDY_DOCS)}
               className="text-gray-700 hover:text-teal-600 font-medium transition-colors hidden sm:block"
             >
-              BijuCorp Learning Hub
+              bijuCorp Learning Hub
             </button>
             {isAuthenticated ? (
               <button
