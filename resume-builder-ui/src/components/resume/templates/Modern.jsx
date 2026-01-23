@@ -13,8 +13,8 @@ const ModernTemplate = ({ data }) => {
             {data.personal.email && <p className="break-all">{data.personal.email}</p>}
             {data.personal.phone && <p>{data.personal.phone}</p>}
             {data.personal.location && <p>{data.personal.location}</p>}
-            {data.personal.linkedin && <p className="break-all">{data.personal.linkedin}</p>}
-            {data.personal.website && <p className="break-all">{data.personal.website}</p>}
+            {data.personal.linkedin && <p className="break-all"><a href={data.personal.linkedin.startsWith("www.") ? `https://${data.personal.linkedin}` : data.personal.linkedin} target="_blank" rel="noopener noreferrer" className="text-blue-200 hover:underline font-medium">{data.personal.linkedin}</a></p>}
+            {data.personal.website && <p className="break-all"><a href={data.personal.website.startsWith("www.") ? `https://${data.personal.website}` : data.personal.website} target="_blank" rel="noopener noreferrer" className="text-blue-200 hover:underline font-medium">{data.personal.website}</a></p>}
           </div>
         </div>
 

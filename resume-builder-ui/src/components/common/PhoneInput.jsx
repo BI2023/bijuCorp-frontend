@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 const COUNTRY_CODES = [
   { code: "+1", country: "US/CA", flag: "🇺🇸" },
@@ -34,6 +34,12 @@ const PhoneInput = ({ label, value, onChange, placeholder, required = false }) =
   const { code: initialCode, number: initialNumber } = parsePhone(value)
   const [countryCode, setCountryCode] = useState(initialCode)
   const [phoneNumber, setPhoneNumber] = useState(initialNumber)
+
+  useEffect(() => {
+    const { code, number } = parsePhone(value)
+    if (code !== countryCode) setCountryCode(code)
+    if (number !== phoneNumber) setPhoneNumber(number)
+  }, [value])
 
   const handleCodeChange = (e) => {
     const newCode = e.target.value

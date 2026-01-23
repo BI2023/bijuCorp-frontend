@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 const DatePicker = ({
   label,
@@ -12,6 +12,10 @@ const DatePicker = ({
   required = false,
 }) => {
   const [isCurrent, setIsCurrent] = useState(value === currentLabel)
+
+  useEffect(() => {
+    setIsCurrent(value === currentLabel)
+  }, [value, currentLabel])
 
   const handleCheckboxChange = (e) => {
     const checked = e.target.checked

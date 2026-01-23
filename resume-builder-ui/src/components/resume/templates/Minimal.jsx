@@ -26,13 +26,13 @@ const MinimalTemplate = ({ data }) => {
           {data.personal.linkedin && (
             <>
               <span className="text-gray-400">|</span>
-              <span className="break-all">{data.personal.linkedin}</span>
+              <span className="break-all"><a href={data.personal.linkedin.startsWith("www.") ? `https://${data.personal.linkedin}` : data.personal.linkedin} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">{data.personal.linkedin}</a></span>
             </>
           )}
           {data.personal.website && (
             <>
               <span className="text-gray-400">|</span>
-              <span className="break-all">{data.personal.website}</span>
+              <span className="break-all"><a href={data.personal.website.startsWith("www.") ? `https://${data.personal.website}` : data.personal.website} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">{data.personal.website}</a></span>
             </>
           )}
         </div>

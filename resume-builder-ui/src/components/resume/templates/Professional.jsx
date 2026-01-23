@@ -15,8 +15,8 @@ const ProfessionalTemplate = ({ data }) => {
           {data.personal.email && <div className="break-all">{data.personal.email}</div>}
           {data.personal.phone && <div>{data.personal.phone}</div>}
           {data.personal.location && <div>{data.personal.location}</div>}
-          {data.personal.linkedin && <div className="break-all"><a href={data.personal.linkedin} target="_blank" rel="noopener noreferrer" className="hover:underline">{data.personal.linkedin}</a></div>}
-          {data.personal.website && <div className="break-all"><a href={data.personal.website} target="_blank" rel="noopener noreferrer" className="hover:underline">{data.personal.website}</a></div>}
+          {data.personal.linkedin && <div className="break-all"><a href={data.personal.linkedin.startsWith("www.") ? `https://${data.personal.linkedin}` : data.personal.linkedin} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">{data.personal.linkedin}</a></div>}
+          {data.personal.website && <div className="break-all"><a href={data.personal.website.startsWith("www.") ? `https://${data.personal.website}` : data.personal.website} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">{data.personal.website}</a></div>}
         </div>
       </div>
 

@@ -16,9 +16,9 @@ const ClassicTemplate = ({ data }) => {
         </div>
         {(data.personal.linkedin || data.personal.website) && (
           <div className="flex items-center justify-center gap-3 text-sm mt-1">
-            {data.personal.linkedin && <span className="break-all">{data.personal.linkedin}</span>}
+            {data.personal.linkedin && <span className="break-all"><a href={data.personal.linkedin.startsWith("www.") ? `https://${data.personal.linkedin}` : data.personal.linkedin} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">{data.personal.linkedin}</a></span>}
             {data.personal.website && <span>•</span>}
-            {data.personal.website && <span className="break-all">{data.personal.website}</span>}
+            {data.personal.website && <span className="break-all"><a href={data.personal.website.startsWith("www.") ? `https://${data.personal.website}` : data.personal.website} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">{data.personal.website}</a></span>}
           </div>
         )}
       </div>
