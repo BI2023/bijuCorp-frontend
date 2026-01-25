@@ -12,10 +12,12 @@ const Footer = () => {
           {/* Brand */}
           <div className="col-span-1">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">R</span>
+              <div className="w-8 h-8 bg-gradient-to-br from-teal-500 to-teal-600 rounded-lg flex items-center justify-center shadow-md">
+                <span className="text-white font-bold text-lg">B</span>
               </div>
-              <span className="text-lg font-bold text-foreground">ResumeBuilder</span>
+              <span className="text-lg font-bold bg-gradient-to-r from-teal-600 to-teal-500 bg-clip-text text-transparent">
+                bijuCorp
+              </span>
             </div>
             <p className="text-sm text-muted-foreground">
               Create professional resumes in minutes with our easy-to-use builder.
@@ -90,7 +92,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-8 pt-8 border-t border-border text-center">
-          <p className="text-sm text-muted-foreground">© {currentYear} ResumeBuilder. All rights reserved.</p>
+          <p className="text-sm text-muted-foreground">© {currentYear} bijuCorp. All rights reserved.</p>
         </div>
       </div>
     </footer>
