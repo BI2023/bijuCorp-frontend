@@ -217,6 +217,11 @@ export default function Home() {
                     Resume Templates
                   </a>
                 </li>
+                <li>
+                  <button onClick={() => navigate(ROUTES.PROJECTS)} className="hover:text-teal-600 transition-colors">
+                    Projects
+                  </button>
+                </li>
               </ul>
             </div>
             <div>

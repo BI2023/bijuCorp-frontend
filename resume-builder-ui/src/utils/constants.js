@@ -35,4 +35,5 @@ export const ROUTES = {
   WALLET: "/dashboard/wallet",
   TRANSACTIONS: "/dashboard/transactions",
   STUDY_DOCS: "/study-docs",
+  PROJECTS: "/projects",
 }
