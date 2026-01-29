@@ -21,6 +21,8 @@ export const RESUME_TEMPLATES = {
   MODERN: "modern",
   MINIMAL: "minimal",
   PROFESSIONAL: "professional",
+  EXECUTIVE: "executive",
+  TECH: "tech",
 }
 
 export const PDF_GENERATION_COST = 10 // Cost in credits

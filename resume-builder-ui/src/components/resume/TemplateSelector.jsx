@@ -30,6 +30,18 @@ const TemplateSelector = ({ selectedTemplate, onSelect }) => {
       description: "Organized with bullet points",
       preview: "/professional-resume-with-sections-and-bullet-point.jpg",
     },
+    {
+      id: "executive",
+      name: "Executive",
+      description: "Elegant and commanding",
+      preview: "/placeholder.svg",
+    },
+    {
+      id: "tech",
+      name: "Tech",
+      description: "Code-inspired for developers",
+      preview: "/placeholder.svg",
+    },
   ]
 
   const currentTemplate = templates.find((t) => t.id === selectedTemplate) || templates[0]
@@ -77,11 +89,10 @@ const TemplateSelector = ({ selectedTemplate, onSelect }) => {
                 <button
                   key={template.id}
                   onClick={() => handleSelect(template.id)}
-                  className={`p-3 border-2 rounded-lg transition-all hover:scale-105 ${
-                    selectedTemplate === template.id
+                  className={`p-3 border-2 rounded-lg transition-all hover:scale-105 ${selectedTemplate === template.id
                       ? "border-teal-500 bg-teal-50 ring-2 ring-teal-200"
                       : "border-gray-200 hover:border-teal-300"
-                  }`}
+                    }`}
                 >
                   <div className="aspect-[3/4] bg-gray-100 rounded mb-2 overflow-hidden">
                     <img

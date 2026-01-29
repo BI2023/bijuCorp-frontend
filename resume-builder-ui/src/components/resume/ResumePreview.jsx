@@ -4,6 +4,8 @@ import ClassicTemplate from "./templates/Classic"
 import ModernTemplate from "./templates/Modern"
 import MinimalTemplate from "./templates/Minimal"
 import ProfessionalTemplate from "./templates/Professional"
+import ExecutiveTemplate from "./templates/Executive"
+import TechTemplate from "./templates/Tech"
 
 const ResumePreview = ({ resumeData, template = "classic" }) => {
   const templates = {
@@ -11,6 +13,8 @@ const ResumePreview = ({ resumeData, template = "classic" }) => {
     modern: ModernTemplate,
     minimal: MinimalTemplate,
     professional: ProfessionalTemplate,
+    executive: ExecutiveTemplate,
+    tech: TechTemplate,
   }
 
   const TemplateComponent = templates[template] || ClassicTemplate

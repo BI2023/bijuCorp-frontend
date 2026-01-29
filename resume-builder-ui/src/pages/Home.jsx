@@ -32,6 +32,20 @@ const templates = [
     image: "/professional-resume-with-sections-and-bullet-point.jpg",
     features: ["Compact design", "Traditional format", "Information dense"],
   },
+  {
+    id: RESUME_TEMPLATES.EXECUTIVE,
+    name: "Executive",
+    description: "Elegant and commanding design for leadership roles",
+    image: "/Executive.jpg",
+    features: ["Leadership focused", "Elegant typography", "Clean hierarchy"],
+  },
+  {
+    id: RESUME_TEMPLATES.TECH,
+    name: "Tech",
+    description: "Code-inspired layout for developers and engineers",
+    image: "/tech.jpg",
+    features: ["Monospaced font", "Skills highlighted", "Git style"],
+  },
 ]
 
 export default function Home() {
