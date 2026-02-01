@@ -14,6 +14,7 @@ import Wallet from "./pages/dashboard/Wallet"
 import Transactions from "./pages/dashboard/Transactions"
 import StudyDocs from "./pages/StudyDocs"
 import Projects from "./pages/Projects"
+import ProjectDetails from "./pages/ProjectDetails"
 import { ROUTES } from "./utils/constants"
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
             <Route path={ROUTES.REGISTER} element={<Register />} />
             <Route path={ROUTES.STUDY_DOCS} element={<StudyDocs />} />
             <Route path={ROUTES.PROJECTS} element={<Projects />} />
+            <Route path={`${ROUTES.PROJECTS}/:id`} element={<ProjectDetails />} />
 
             <Route
               path={ROUTES.DASHBOARD}
