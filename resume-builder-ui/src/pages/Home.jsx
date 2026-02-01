@@ -77,12 +77,12 @@ export default function Home() {
             </h1>
           </div>
           <nav className="flex items-center gap-6">
-            {/* <button
-              onClick={() => navigate(ROUTES.STUDY_DOCS)}
+            <button
+              onClick={() => navigate(ROUTES.PROJECTS)}
               className="text-gray-700 hover:text-teal-600 font-medium transition-colors hidden sm:block"
             >
-              bijuCorp Learning Hub
-            </button> */}
+              Projects
+            </button>
             {isAuthenticated ? (
               <button
                 onClick={() => navigate(ROUTES.DASHBOARD)}
