@@ -40,10 +40,10 @@ export default function ProjectDetails() {
                             {project.title}
                         </h1>
                         <span className={`px-4 py-1.5 rounded-full text-sm font-semibold ${project.status === "Concept" || project.status === "Idea"
-                                ? "bg-yellow-500/10 text-yellow-400 border border-yellow-500/20"
-                                : project.status === "In Progress"
-                                    ? "bg-blue-500/10 text-blue-400 border border-blue-500/20"
-                                    : "bg-teal-500/10 text-teal-400 border border-teal-500/20"
+                            ? "bg-yellow-500/10 text-yellow-400 border border-yellow-500/20"
+                            : project.status === "In Progress"
+                                ? "bg-blue-500/10 text-blue-400 border border-blue-500/20"
+                                : "bg-teal-500/10 text-teal-400 border border-teal-500/20"
                             }`}>
                             {project.status}
                         </span>
@@ -71,6 +71,29 @@ export default function ProjectDetails() {
                                 {project.details.overview}
                             </p>
                         </div>
+
+                        {project.details.detectionApproaches && (
+                            <div className="bg-slate-900/30 border border-slate-800 rounded-2xl p-6">
+                                <h2 className="text-xl font-bold text-slate-200 mb-4">Detection Approaches</h2>
+                                <div className="space-y-4">
+                                    {project.details.detectionApproaches.map((approach, index) => (
+                                        <div key={index} className="bg-slate-900/50 rounded-xl p-4 border border-slate-700/50">
+                                            <h3 className="font-bold text-teal-400 mb-2">{approach.title}</h3>
+                                            <p className="text-sm text-slate-400 mb-3 leading-relaxed">
+                                                {approach.description}
+                                            </p>
+                                            <div className="flex flex-wrap gap-2">
+                                                {approach.tags.map((tag, tagIndex) => (
+                                                    <span key={tagIndex} className="px-2 py-0.5 bg-slate-800 text-slate-500 rounded text-xs border border-slate-700">
+                                                        {tag}
+                                                    </span>
+                                                ))}
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        )}
 
                         <div className="bg-slate-900/30 border border-slate-800 rounded-2xl p-6">
                             <h2 className="text-xl font-bold text-slate-200 mb-4">Key Features</h2>
@@ -104,8 +127,8 @@ export default function ProjectDetails() {
                                 {project.details.roadmap.map((item, index) => (
                                     <div key={index} className="relative pl-6 border-l-2 border-slate-800 pb-2">
                                         <div className={`absolute -left-[9px] top-0 w-4 h-4 rounded-full border-2 ${item.status === "Completed" ? "bg-teal-500 border-teal-500" :
-                                                item.status === "In Progress" ? "bg-slate-900 border-blue-500" :
-                                                    "bg-slate-900 border-slate-600"
+                                            item.status === "In Progress" ? "bg-slate-900 border-blue-500" :
+                                                "bg-slate-900 border-slate-600"
                                             }`}></div>
                                         <div className="mb-2">
                                             <h3 className="text-slate-200 font-semibold">{item.stage}</h3>
