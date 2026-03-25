@@ -92,6 +92,13 @@ export default function Login() {
             </div>
           )}
 
+          {/* Maintenance Alert */}
+          <div className="mb-6 p-4 bg-amber-50 border border-amber-200 rounded-lg">
+            <p className="text-sm text-amber-800 font-medium text-center">
+              Login is temporarily unavailable due to technical issues. We are working to restore the service.
+            </p>
+          </div>
+
           {/* Login Form */}
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
@@ -104,7 +111,7 @@ export default function Login() {
                 error={errors.username}
                 placeholder="Enter your username"
                 autoComplete="username"
-                disabled={loading}
+                disabled={true}
               />
             </div>
 
@@ -118,7 +125,7 @@ export default function Login() {
                 error={errors.password}
                 placeholder="Enter your password"
                 autoComplete="current-password"
-                disabled={loading}
+                disabled={true}
               />
             </div>
 
@@ -126,7 +133,8 @@ export default function Login() {
               <label className="flex items-center gap-2 cursor-pointer">
                 <input
                   type="checkbox"
-                  className="w-4 h-4 rounded border-slate-300 text-slate-900 focus:ring-slate-900"
+                  disabled={true}
+                  className="w-4 h-4 rounded border-slate-300 text-slate-900 focus:ring-slate-900 opacity-50 cursor-not-allowed"
                 />
                 <span className="text-slate-600">Remember me</span>
               </label>
@@ -138,10 +146,10 @@ export default function Login() {
             <Button
               type="submit"
               variant="primary"
-              className="w-full bg-gradient-to-r from-teal-500 to-teal-600 hover:from-teal-600 hover:to-teal-700 text-white py-3 text-lg font-semibold shadow-lg hover:shadow-xl transition-all"
-              disabled={loading}
+              className="w-full bg-slate-400 text-white py-3 text-lg font-semibold shadow-lg cursor-not-allowed"
+              disabled={true}
             >
-              {loading ? "Signing in..." : "Sign in"}
+              System Offline
             </Button>
           </form>
 

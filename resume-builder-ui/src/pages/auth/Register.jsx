@@ -123,6 +123,13 @@ export default function Register() {
             </div>
           )}
 
+          {/* Maintenance Alert */}
+          <div className="mb-6 p-4 bg-amber-50 border border-amber-200 rounded-lg">
+            <p className="text-sm text-amber-800 font-medium text-center">
+              New user registration is temporarily unavailable due to technical issues. Please check back later.
+            </p>
+          </div>
+
           {/* Registration Form */}
           <form onSubmit={handleSubmit} className="space-y-5">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -136,7 +143,7 @@ export default function Register() {
                   error={errors.firstName}
                   placeholder="Bhupendra"
                   autoComplete="given-name"
-                  disabled={loading}
+                  disabled={true}
                 />
               </div>
               <div>
@@ -149,7 +156,7 @@ export default function Register() {
                   error={errors.lastName}
                   placeholder="Singh"
                   autoComplete="family-name"
-                  disabled={loading}
+                  disabled={true}
                 />
               </div>
             </div>
@@ -164,7 +171,7 @@ export default function Register() {
                 error={errors.username}
                 placeholder="singsbhu"
                 autoComplete="username"
-                disabled={loading}
+                disabled={true}
               />
             </div>
 
@@ -178,7 +185,7 @@ export default function Register() {
                 error={errors.email}
                 placeholder="singh.bk@bijucorp.in"
                 autoComplete="email"
-                disabled={loading}
+                disabled={true}
               />
             </div>
 
@@ -193,7 +200,7 @@ export default function Register() {
                   error={errors.password}
                   placeholder="••••••••"
                   autoComplete="new-password"
-                  disabled={loading}
+                  disabled={true}
                 />
                 <p className="mt-1 text-xs text-slate-500">Must contain uppercase, lowercase, and number</p>
               </div>
@@ -207,7 +214,7 @@ export default function Register() {
                   error={errors.confirmPassword}
                   placeholder="••••••••"
                   autoComplete="new-password"
-                  disabled={loading}
+                  disabled={true}
                 />
               </div>
             </div>
@@ -216,7 +223,8 @@ export default function Register() {
               <input
                 type="checkbox"
                 required
-                className="mt-1 w-4 h-4 rounded border-slate-300 text-slate-900 focus:ring-slate-900"
+                disabled={true}
+                className="mt-1 w-4 h-4 rounded border-slate-300 text-slate-900 focus:ring-slate-900 opacity-50 cursor-not-allowed"
               />
               <label className="text-sm text-slate-600">
                 I agree to the{" "}
@@ -233,10 +241,10 @@ export default function Register() {
             <Button
               type="submit"
               variant="primary"
-              className="w-full bg-gradient-to-r from-teal-500 to-teal-600 hover:from-teal-600 hover:to-teal-700 text-white py-3 text-lg font-semibold shadow-lg hover:shadow-xl transition-all"
-              disabled={loading}
+              className="w-full bg-slate-400 text-white py-3 text-lg font-semibold shadow-lg cursor-not-allowed"
+              disabled={true}
             >
-              {loading ? "Creating account..." : "Create account"}
+              System Offline
             </Button>
           </form>
 
