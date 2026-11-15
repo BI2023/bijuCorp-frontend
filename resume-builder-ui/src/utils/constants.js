@@ -38,4 +38,6 @@ export const ROUTES = {
   TRANSACTIONS: "/dashboard/transactions",
   STUDY_DOCS: "/study-docs",
   PROJECTS: "/projects",
+  YOUTUBE_DOWNLOADER: "/youtube-downloader",
+  PDF_EDITOR: "/pdf-editor",
 }

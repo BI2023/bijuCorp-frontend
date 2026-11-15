@@ -57,6 +57,24 @@ const Navbar = () => {
                 <a href="/docs" className="text-foreground hover:text-primary transition-colors font-medium">
                   Study Docs
                 </a>
+                <Link
+                  to={ROUTES.YOUTUBE_DOWNLOADER}
+                  className="flex items-center gap-1.5 text-foreground hover:text-red-600 transition-colors font-medium"
+                >
+                  <svg className="w-4 h-4 text-red-600 fill-current" viewBox="0 0 24 24">
+                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                  </svg>
+                  <span>YT Downloader</span>
+                </Link>
+                <Link
+                  to={ROUTES.PDF_EDITOR}
+                  className="flex items-center gap-1.5 text-foreground hover:text-teal-600 transition-colors font-medium"
+                >
+                  <svg className="w-4 h-4 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                  <span>PDF Editor</span>
+                </Link>
 
                 {/* Wallet Balance */}
                 <Link
@@ -127,6 +145,24 @@ const Navbar = () => {
                 <a href="/docs" className="text-foreground hover:text-primary transition-colors font-medium">
                   Study Docs
                 </a>
+                <Link
+                  to={ROUTES.YOUTUBE_DOWNLOADER}
+                  className="flex items-center gap-1.5 text-foreground hover:text-red-600 transition-colors font-medium"
+                >
+                  <svg className="w-4 h-4 text-red-600 fill-current" viewBox="0 0 24 24">
+                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                  </svg>
+                  <span>YT Downloader</span>
+                </Link>
+                <Link
+                  to={ROUTES.PDF_EDITOR}
+                  className="flex items-center gap-1.5 text-foreground hover:text-teal-600 transition-colors font-medium"
+                >
+                  <svg className="w-4 h-4 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                  <span>PDF Editor</span>
+                </Link>
                 <Link to={ROUTES.LOGIN} className="text-foreground hover:text-primary transition-colors font-medium">
                   Login
                 </Link>
@@ -193,6 +229,26 @@ const Navbar = () => {
                 >
                   Study Docs
                 </a>
+                <Link
+                  to={ROUTES.YOUTUBE_DOWNLOADER}
+                  className="text-red-600 font-medium py-2 flex items-center gap-2"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                  </svg>
+                  <span>YouTube Downloader</span>
+                </Link>
+                <Link
+                  to={ROUTES.PDF_EDITOR}
+                  className="text-teal-600 font-medium py-2 flex items-center gap-2"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                  <span>PDF Editor</span>
+                </Link>
                 <button onClick={handleLogout} className="text-left text-destructive hover:text-destructive/80 py-2">
                   Logout
                 </button>
@@ -206,6 +262,26 @@ const Navbar = () => {
                 >
                   Study Docs
                 </a>
+                <Link
+                  to={ROUTES.YOUTUBE_DOWNLOADER}
+                  className="text-red-600 font-medium py-2 flex items-center gap-2"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                  </svg>
+                  <span>YouTube Downloader</span>
+                </Link>
+                <Link
+                  to={ROUTES.PDF_EDITOR}
+                  className="text-teal-600 font-medium py-2 flex items-center gap-2"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                  <span>PDF Editor</span>
+                </Link>
                 <Link
                   to={ROUTES.LOGIN}
                   className="text-foreground hover:text-primary py-2"

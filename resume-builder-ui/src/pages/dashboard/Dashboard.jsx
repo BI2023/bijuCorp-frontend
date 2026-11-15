@@ -105,6 +105,71 @@ const Dashboard = () => {
               </div>
             </div>
 
+            {/* Quick Tools Banners */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-10">
+              {/* PDF Editor Tool Card */}
+              <div className="bg-gradient-to-r from-teal-600 via-teal-700 to-cyan-700 rounded-3xl p-6 text-white shadow-xl flex flex-col justify-between gap-4">
+                <div className="flex items-start gap-4">
+                  <div className="w-14 h-14 bg-white/20 backdrop-blur-md rounded-2xl flex items-center justify-center flex-shrink-0 shadow-inner">
+                    <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <div className="inline-block px-2.5 py-0.5 bg-white/20 rounded-full text-xs font-bold mb-1">
+                      New Tool
+                    </div>
+                    <h3 className="text-xl font-bold">PDF Editor & Digital Sign</h3>
+                    <p className="text-white/80 text-xs sm:text-sm mt-1">
+                      Upload any PDF to edit text, redact with whiteout, sign documents, and download instantly.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex justify-end">
+                  <Link
+                    to={ROUTES.PDF_EDITOR}
+                    className="px-5 py-2.5 bg-white text-teal-700 rounded-xl font-bold hover:bg-teal-50 transition-colors shadow-md text-xs sm:text-sm flex items-center gap-2"
+                  >
+                    <span>Open PDF Editor</span>
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </Link>
+                </div>
+              </div>
+
+              {/* YouTube Downloader Tool Card */}
+              <div className="bg-gradient-to-r from-red-600 via-rose-600 to-orange-500 rounded-3xl p-6 text-white shadow-xl flex flex-col justify-between gap-4">
+                <div className="flex items-start gap-4">
+                  <div className="w-14 h-14 bg-white/20 backdrop-blur-md rounded-2xl flex items-center justify-center flex-shrink-0 shadow-inner">
+                    <svg className="w-8 h-8 fill-white" viewBox="0 0 24 24">
+                      <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <div className="inline-block px-2.5 py-0.5 bg-white/20 rounded-full text-xs font-bold mb-1">
+                      Free Tool
+                    </div>
+                    <h3 className="text-xl font-bold">YouTube Video Downloader</h3>
+                    <p className="text-white/80 text-xs sm:text-sm mt-1">
+                      Download videos in 1080p, 720p or convert directly to high-bitrate MP3 audio.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex justify-end">
+                  <Link
+                    to={ROUTES.YOUTUBE_DOWNLOADER}
+                    className="px-5 py-2.5 bg-white text-red-600 rounded-xl font-bold hover:bg-red-50 transition-colors shadow-md text-xs sm:text-sm flex items-center gap-2"
+                  >
+                    <span>Open Downloader</span>
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </Link>
+                </div>
+              </div>
+            </div>
+
             <div className="bg-white border border-gray-200 rounded-3xl p-8 shadow-lg">
               <div className="flex items-center justify-between mb-8">
                 <div>

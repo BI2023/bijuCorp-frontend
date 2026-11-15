@@ -15,6 +15,8 @@ import Transactions from "./pages/dashboard/Transactions"
 import StudyDocs from "./pages/StudyDocs"
 import Projects from "./pages/Projects"
 import ProjectDetails from "./pages/ProjectDetails"
+import YoutubeDownloader from "./pages/YoutubeDownloader"
+import PdfEditor from "./pages/PdfEditor"
 import { ROUTES } from "./utils/constants"
 
 function App() {
@@ -29,6 +31,12 @@ function App() {
             <Route path={ROUTES.STUDY_DOCS} element={<StudyDocs />} />
             <Route path={ROUTES.PROJECTS} element={<Projects />} />
             <Route path={`${ROUTES.PROJECTS}/:id`} element={<ProjectDetails />} />
+            <Route path={ROUTES.YOUTUBE_DOWNLOADER} element={<YoutubeDownloader />} />
+            <Route path="/tools/youtube-downloader" element={<Navigate to={ROUTES.YOUTUBE_DOWNLOADER} replace />} />
+            <Route path="/dashboard/youtube-downloader" element={<Navigate to={ROUTES.YOUTUBE_DOWNLOADER} replace />} />
+            <Route path={ROUTES.PDF_EDITOR} element={<PdfEditor />} />
+            <Route path="/tools/pdf-editor" element={<Navigate to={ROUTES.PDF_EDITOR} replace />} />
+            <Route path="/dashboard/pdf-editor" element={<Navigate to={ROUTES.PDF_EDITOR} replace />} />
 
             <Route
               path={ROUTES.DASHBOARD}
