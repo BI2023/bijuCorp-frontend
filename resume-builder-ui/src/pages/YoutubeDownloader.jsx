@@ -667,39 +667,7 @@ Enjoy your video from bijuCorp!
                     </button>
                   )}
 
-                  {/* Direct Mirror Fallback Options */}
-                  <div className="mt-4 pt-4 border-t border-gray-100 flex items-center justify-between flex-wrap gap-2 text-xs text-gray-500">
-                    <span>Alternative download mirrors:</span>
-                    <div className="flex items-center gap-2">
-                      <a
-                        href={`https://cobalt.tools/`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="px-2.5 py-1 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-md font-medium transition-colors flex items-center gap-1"
-                      >
-                        <span>Cobalt</span>
-                        <ExternalLink className="w-3 h-3" />
-                      </a>
-                      <a
-                        href={`https://y2mate.is/`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="px-2.5 py-1 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-md font-medium transition-colors flex items-center gap-1"
-                      >
-                        <span>Y2Mate</span>
-                        <ExternalLink className="w-3 h-3" />
-                      </a>
-                      <a
-                        href={`https://invidious.io/`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="px-2.5 py-1 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-md font-medium transition-colors flex items-center gap-1"
-                      >
-                        <span>Invidious</span>
-                        <ExternalLink className="w-3 h-3" />
-                      </a>
-                    </div>
-                  </div>
+
                 </div>
               </div>
             </div>
